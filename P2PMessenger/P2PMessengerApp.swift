@@ -11,7 +11,11 @@ import SwiftUI
 struct P2PMessengerApp: App {
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            
+            NavigationView{
+                HomePage()
+            }
+            .environmentObject(RequestsViewModel())
         }
     }
 }
