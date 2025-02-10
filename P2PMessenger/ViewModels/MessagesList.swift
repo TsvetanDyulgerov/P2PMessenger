@@ -28,7 +28,8 @@ class MessagesList: ObservableObject {
         messages.append(contentsOf: testMessages)
     }
     
-    func append(_ message: Message) {
+    func append(_ content: String, isMine: Bool, from: String, to: String) {
+        let message: Message = Message(from: from, to: to, content: content, isMine: isMine)
         messages.append(message)
     }
 }

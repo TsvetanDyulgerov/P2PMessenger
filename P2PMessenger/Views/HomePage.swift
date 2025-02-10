@@ -130,4 +130,5 @@ struct HomePage: View {
         HomePage()
     }
         .environmentObject(RequestsViewModel())
+        .environmentObject(MessagesList())
 }

@@ -89,7 +89,7 @@ struct Chat: View {
     func sendButton(isEnabled: Bool) -> some View
     {
         Button {
-            print("Send")
+            messagesList.append(message, isMine: true, from: "1", to: connection.to)
             
         } label: {
             Image(systemName: "paperplane.fill")
